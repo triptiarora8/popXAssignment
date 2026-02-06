@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AccountSettings from './AccountSettings';
 
 const LoginForm = () => {
-  const [login, setLogin] = React.useState(false);
+  const [login, setLogin] = useState(false);
 
   if(login){
     return <AccountSettings/>
